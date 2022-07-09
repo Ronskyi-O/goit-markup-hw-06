@@ -652,6 +652,7 @@ img {
 }
 
 .footer .address {
+  width: 231px;
   margin-bottom: 9px;
   font-weight: 400;
   font-style: normal;
@@ -698,6 +699,7 @@ img {
   display: flex;
   align-items: center;
   height: 44px;
+  margin-right: 93px;
 }
 
 .networks .network:not(:last-child) {
@@ -727,6 +729,77 @@ img {
 
 .footer .icon {
   fill: currentColor;
+}
+
+.subscribe .tittle {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--additional-color);
+}
+
+.subscribe .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.subscribe .field {
+  width: 358px;
+  height: 50px;
+  padding: 0 16px;
+
+  color: var(--additional-color);
+  background-color: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.subscribe .field:not(:placeholder-shown):valid {
+  border-color: var(--additional-color);
+}
+
+.subscribe .field:not(:placeholder-shown):invalid {
+  border-color: rgb(213, 91, 91);
+}
+
+.subscribe .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  width: 200px;
+  padding: 10px 28px 10px 29px;
+  border: 0;
+  border-radius: 4px;
+
+  font-family: roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--additional-color);
+  background-color: var(--hoover-color);
+
+  cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe .button:hover,
+.subscribe .button:focus {
+  background-color: var(--hoover-color-main-button);
 }
 
 /* Модальное окно */
@@ -784,6 +857,6 @@ img {
   background-color: var(--main-background-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  
+
   cursor: pointer;
 }
