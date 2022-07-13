@@ -756,8 +756,13 @@ img {
   border-radius: 4px;
 }
 
-.subscribe .field:focus {
-  border-color: var(--additional-color);
+.subscribe .field:-webkit-autofill,
+.subscribe .field:-webkit-autofill:hover,
+.subscribe .field:-webkit-autofill:focus {
+  border: 1px solid green;
+  -webkit-text-fill-color: var(--additional-color);
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .subscribe .button {
